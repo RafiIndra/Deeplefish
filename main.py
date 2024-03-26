@@ -10,13 +10,13 @@ input_size = 98
 num_layers = 1
 
 model2 = m.myLSTM(input_size, hidden_size, num_layers, num_classes, embed_dim)
-model2.load_state_dict(torch.load('Deeplechess.pt'))
+model2.load_state_dict(torch.load('Deeplefish.pt'))
 model2.eval()
 
 while True:
   msg = input()
   if msg == "uci":
-    print("Deeplechess by Rafi Indra Fattah")
+    print("Deeplefish by Rafi Indra Fattah")
     print("uciok")
 
   elif msg == "isready":
